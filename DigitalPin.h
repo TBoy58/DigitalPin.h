@@ -24,6 +24,7 @@ class DigitalPin
     void on();
     void off();
 	void level(int val);
+	int pinNum();
     bool status();
 	bool readState();
 	unsigned long pulseInHigh();

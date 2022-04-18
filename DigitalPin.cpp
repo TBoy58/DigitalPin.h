@@ -42,6 +42,11 @@ void DigitalPin::level(int val)
   analogWrite(_pin, val);
 }
 
+int DigitalPin::pinNum()
+{
+  return _pin;
+}
+
 bool DigitalPin::status() //this returns the current status of the pin.
 //It could be used by some other component of the sketch that needs to know whether the pin is on or off.
 //This is an example for a method for 'communication' between or with objects.
